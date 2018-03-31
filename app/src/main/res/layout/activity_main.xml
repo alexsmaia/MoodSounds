@@ -1,18 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/choose_moood"
+        android:textAlignment="center"
+        android:padding="16dp"
+        android:textSize="26sp"
+        android:textAllCaps="true"
+        android:textStyle="bold"/>
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            style="@style/coluns">
+
+            <TextView
+                style="@style/moods"
+                android:text="@string/calm"
+                android:background="@color/calm" />
+            <TextView
+                style="@style/moods"
+                android:text="@string/romantic"
+                android:background="@color/romantic" />
+            <TextView
+                style="@style/moods"
+                android:text="@string/energetic"
+                android:background="@color/energetic" />
+            <TextView
+                style="@style/moods"
+                android:text="@string/angry"
+                android:background="@color/angry" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/coluns">
+
+            <TextView
+                style="@style/moods"
+                android:text="@string/relaxed"
+                android:background="@color/relaxed" />
+            <TextView
+                style="@style/moods"
+                android:text="@string/happy"
+                android:background="@color/happy" />
+            <TextView
+                style="@style/moods"
+                android:text="@string/grumpy"
+                android:background="@color/grumpy" />
+            <TextView
+                style="@style/moods"
+                android:text="@string/sad"
+                android:background="@color/sad" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

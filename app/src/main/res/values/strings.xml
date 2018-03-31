@@ -1,3 +1,19 @@
 <resources>
+
+    <!-- App Name -->
     <string name="app_name">Mood Sounds</string>
+
+    <!-- Main Slogan -->
+    <string name="choose_moood">Choose your mood</string>
+
+    <!-- Moods -->
+    <string name="angry">Angry</string>
+    <string name="calm">Calm</string>
+    <string name="energetic">Energetic</string>
+    <string name="grumpy">Grumpy</string>
+    <string name="happy">Happy</string>
+    <string name="relaxed">Relaxed</string>
+    <string name="romantic">Romantic</string>
+    <string name="sad">Sad</string>
+
 </resources>
