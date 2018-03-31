@@ -4,7 +4,7 @@
     <string name="app_name">Mood Sounds</string>
 
     <!-- Main Slogan -->
-    <string name="choose_moood">Choose your mood</string>
+    <string name="choose_mood">Choose your mood</string>
 
     <!-- Moods -->
     <string name="angry">Angry</string>
