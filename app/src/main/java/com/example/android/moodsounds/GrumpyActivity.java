@@ -2,7 +2,7 @@ package com.example.android.moodsounds;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.LinearLayout;
+import android.widget.ListView;
 
 public class GrumpyActivity extends AppCompatActivity {
 
@@ -13,9 +13,9 @@ public class GrumpyActivity extends AppCompatActivity {
         setContentView(R.layout.music_list);
 
         // Find Root view
-        LinearLayout musicListBox = (LinearLayout) findViewById(R.id.musicListBox);
+        ListView musicList = (ListView) findViewById(R.id.musicList);
         // Change Background
-        musicListBox.setBackgroundResource(R.color.grumpy);
+        musicList.setBackgroundResource(R.color.grumpy);
 
     }
 }

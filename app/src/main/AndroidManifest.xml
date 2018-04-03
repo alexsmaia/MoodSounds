@@ -56,6 +56,10 @@
             android:label="@string/sad"
             android:parentActivityName=".MainActivity">
         </activity>
+        <activity android:name=".DetailsActivity"
+            android:label="@string/music_details"
+            android:parentActivityName=".MainActivity">
+        </activity>
     </application>
 
 </manifest>

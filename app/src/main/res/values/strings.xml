@@ -16,4 +16,6 @@
     <string name="romantic">Romantic</string>
     <string name="sad">Sad</string>
 
+    <string name="music_details">Music Details</string>
+
 </resources>
