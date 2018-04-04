@@ -32,8 +32,6 @@ public class Music implements Parcelable {
         this.musicMood = musicMood;
     }
 
-
-
     private Music(Parcel in) {
         musicTitle = in.readString();
         musicAuthor = in.readString();
@@ -73,8 +71,6 @@ public class Music implements Parcelable {
      * Get the music Mood.
      */
     public String getMusicMood() { return musicMood; }
-
-
 
     public static final Creator<Music> CREATOR
             = new Creator<Music>() {
