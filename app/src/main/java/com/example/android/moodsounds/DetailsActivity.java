@@ -4,12 +4,15 @@ import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class DetailsActivity extends AppCompatActivity {
 
     // Global Variable Witch Activity to go Back
-    public String backActivity;
+    private String backActivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,10 +27,51 @@ public class DetailsActivity extends AppCompatActivity {
         // Get the mood
         backActivity = music.getMusicMood();
 
+        // Find Root view
+        LinearLayout rootView = (LinearLayout) findViewById(R.id.detailsRoot);
+        // Change Background
+        if (backActivity.equals("Angry")) {
+            rootView.setBackgroundResource(R.color.angry);
+        } else if (backActivity.equals("Calm")) {
+            rootView.setBackgroundResource(R.color.calm);
+        } else if (backActivity.equals("Energetic")) {
+            rootView.setBackgroundResource(R.color.energetic);
+        } else if (backActivity.equals("Grumpy")) {
+            rootView.setBackgroundResource(R.color.grumpy);
+        } else if (backActivity.equals("Happy")) {
+            rootView.setBackgroundResource(R.color.happy);
+        } else if (backActivity.equals("Relaxed")) {
+            rootView.setBackgroundResource(R.color.relaxed);
+        } else if (backActivity.equals("Romantic")) {
+            rootView.setBackgroundResource(R.color.romantic);
+        } else if (backActivity.equals("Sad")) {
+            rootView.setBackgroundResource(R.color.sad);
+        }
 
         // Get & Add Title to TextView
         TextView detailsMusicTitle = (TextView) findViewById(R.id.detailsMusicTitle);
         detailsMusicTitle.setText(music.getMusicTitle());
+
+        // Get & Add Title to TextView
+        TextView detailsMusicAuthor = (TextView) findViewById(R.id.detailsMusicAuthor);
+        detailsMusicAuthor.setText(music.getMusicAuthor());
+
+        // Get & Add Title to TextView
+        TextView detailsMusicDuration = (TextView) findViewById(R.id.detailsMusicDuration);
+        detailsMusicDuration.setText(music.getMusicDuration());
+
+        // Get & Add Listener to Button Mood Change
+        Button btnMoodChange = (Button) findViewById(R.id.moodChange);
+        btnMoodChange.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Add Mood to Intent
+                Intent ActivityIntent = new Intent(DetailsActivity.this, MainActivity.class);
+                // Start the activity
+                startActivity(ActivityIntent);
+            }
+        });
+
 
     }
 
@@ -38,9 +82,21 @@ public class DetailsActivity extends AppCompatActivity {
         // Get the mood
         Intent intent;
         if (backActivity.equals("Angry")) {
-            intent = new Intent(this, AngryActivity.class);
-        } else  if (backActivity.equals("Calm")) {
+            intent = new Intent(this, MoodActivity.class);
+        } else if (backActivity.equals("Calm")) {
             intent = new Intent(this, CalmActivity.class);
+        } else if (backActivity.equals("Energetic")) {
+            intent = new Intent(this, EnergeticActivity.class);
+        } else if (backActivity.equals("Grumpy")) {
+            intent = new Intent(this, GrumpyActivity.class);
+        } else if (backActivity.equals("Happy")) {
+            intent = new Intent(this, HappyActivity.class);
+        } else if (backActivity.equals("Relaxed")) {
+            intent = new Intent(this, RelaxedActivity.class);
+        } else if (backActivity.equals("Romantic")) {
+            intent = new Intent(this, RomanticActivity.class);
+        } else if (backActivity.equals("Sad")) {
+            intent = new Intent(this, SadActivity.class);
         } else {
             intent = new Intent(this, MainActivity.class);
         }

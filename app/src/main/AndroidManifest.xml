@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".AngryActivity"
+            android:name=".MoodActivity"
             android:label="@string/angry"
             android:parentActivityName=".MainActivity">
         </activity>

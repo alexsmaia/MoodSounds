@@ -16,6 +16,12 @@
     <string name="romantic">Romantic</string>
     <string name="sad">Sad</string>
 
+    <!-- Details Activity -->
     <string name="music_details">Music Details</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="mood_change">My mood has changed!</string>
+
+    <!-- Img Description -->
+    <string name="play_btn">Play Button</string>
 
 </resources>

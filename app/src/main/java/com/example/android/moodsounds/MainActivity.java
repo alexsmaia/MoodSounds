@@ -13,16 +13,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Create intent to open {@link MoodActivity}
+        final Intent MoodIntent = new Intent(MainActivity.this, MoodActivity.class);
+
         // Find Angry view
         TextView angry = (TextView) findViewById(R.id.angry);
         // Set click listener on Angry View
         angry.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Create intent to open {@link Angryctivity}
-                Intent AngryIntent = new Intent(MainActivity.this, AngryActivity.class);
+                // Add Mood to Intent
+                MoodIntent.putExtra("mood", "Angry");
                 // Start the activity
-                startActivity(AngryIntent);
+                startActivity(MoodIntent);
             }
         });
 
@@ -32,10 +35,10 @@ public class MainActivity extends AppCompatActivity {
         calm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Create intent to open {@link CalmActivity}
-                Intent CalmIntent = new Intent(MainActivity.this, CalmActivity.class);
+                // Add Mood to Intent
+                MoodIntent.putExtra("mood", "Calm");
                 // Start the activity
-                startActivity(CalmIntent);
+                startActivity(MoodIntent);
             }
         });
 
@@ -45,10 +48,10 @@ public class MainActivity extends AppCompatActivity {
         energetic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Create intent to open {@link EnergeticActivity}
-                Intent EnergeticIntent = new Intent(MainActivity.this, EnergeticActivity.class);
+                // Add Mood to Intent
+                MoodIntent.putExtra("mood", "Energetic");
                 // Start the activity
-                startActivity(EnergeticIntent);
+                startActivity(MoodIntent);
             }
         });
 
@@ -58,10 +61,10 @@ public class MainActivity extends AppCompatActivity {
         grumpy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Create intent to open {@link GrumpyActivity}
-                Intent GrumpyIntent = new Intent(MainActivity.this, GrumpyActivity.class);
+                // Add Mood to Intent
+                MoodIntent.putExtra("mood", "Grumpy");
                 // Start the activity
-                startActivity(GrumpyIntent);
+                startActivity(MoodIntent);
             }
         });
 
@@ -71,10 +74,10 @@ public class MainActivity extends AppCompatActivity {
         happy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Create intent to open {@link HappyActivity}
-                Intent HappyIntent = new Intent(MainActivity.this, HappyActivity.class);
+                // Add Mood to Intent
+                MoodIntent.putExtra("mood", "Happy");
                 // Start the activity
-                startActivity(HappyIntent);
+                startActivity(MoodIntent);
             }
         });
 
@@ -84,10 +87,10 @@ public class MainActivity extends AppCompatActivity {
         relaxed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Create intent to open {@link RelaxedActivity}
-                Intent RelaxedIntent = new Intent(MainActivity.this, RelaxedActivity.class);
+                // Add Mood to Intent
+                MoodIntent.putExtra("mood", "Relaxed");
                 // Start the activity
-                startActivity(RelaxedIntent);
+                startActivity(MoodIntent);
             }
         });
 
@@ -97,10 +100,10 @@ public class MainActivity extends AppCompatActivity {
         romantic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Create intent to open {@link RomanticActivity}
-                Intent RomanticIntent = new Intent(MainActivity.this, RomanticActivity.class);
+                // Add Mood to Intent
+                MoodIntent.putExtra("mood", "Romantic");
                 // Start the activity
-                startActivity(RomanticIntent);
+                startActivity(MoodIntent);
             }
         });
 
@@ -110,10 +113,10 @@ public class MainActivity extends AppCompatActivity {
         sad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Create intent to open {@link SadActivity}
-                Intent SadIntent = new Intent(MainActivity.this, SadActivity.class);
+                // Add Mood to Intent
+                MoodIntent.putExtra("mood", "Sad");
                 // Start the activity
-                startActivity(SadIntent);
+                startActivity(MoodIntent);
             }
         });
     }

@@ -1,16 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detailsRoot"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
-    tools:context=".DetailsActivity">
+    android:orientation="vertical"
+    android:padding="18dp"
+    tools:context=".DetailsActivity"
+    tools:background="@color/angry">
+
+    <TextView
+        style="@style/detais_item_text"
+        android:text="@string/now_playing"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/play_btn"
+        android:scaleType="centerInside"
+        android:src="@drawable/play"/>
 
     <TextView
         android:id="@+id/detailsMusicTitle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/detais_item_text"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
         tools:text="Music title"/>
+
+    <TextView
+        android:id="@+id/detailsMusicAuthor"
+        style="@style/detais_item_text"
+        android:textSize="20sp"
+        tools:text="Music Author"/>
+
+    <TextView
+        android:id="@+id/detailsMusicDuration"
+        style="@style/detais_item_text"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"
+        tools:text="Music Duration"/>
+
+    <Button
+        android:id="@+id/moodChange"
+        style="@style/button_change"
+        android:text="@string/mood_change" />
 
 </LinearLayout>
