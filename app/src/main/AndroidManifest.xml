@@ -21,44 +21,9 @@
             android:label="@string/angry"
             android:parentActivityName=".MainActivity">
         </activity>
-        <activity
-            android:name=".CalmActivity"
-            android:label="@string/calm"
-            android:parentActivityName=".MainActivity">
-        </activity>
-        <activity
-            android:name=".EnergeticActivity"
-            android:label="@string/energetic"
-            android:parentActivityName=".MainActivity">
-        </activity>
-        <activity
-            android:name=".GrumpyActivity"
-            android:label="@string/grumpy"
-            android:parentActivityName=".MainActivity">
-        </activity>
-        <activity
-            android:name=".HappyActivity"
-            android:label="@string/happy"
-            android:parentActivityName=".MainActivity">
-        </activity>
-        <activity
-            android:name=".RelaxedActivity"
-            android:label="@string/relaxed"
-            android:parentActivityName=".MainActivity">
-        </activity>
-        <activity
-            android:name=".RomanticActivity"
-            android:label="@string/romantic"
-            android:parentActivityName=".MainActivity">
-        </activity>
-        <activity
-            android:name=".SadActivity"
-            android:label="@string/sad"
-            android:parentActivityName=".MainActivity">
-        </activity>
         <activity android:name=".DetailsActivity"
             android:label="@string/music_details"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MoodActivity">
         </activity>
     </application>
 

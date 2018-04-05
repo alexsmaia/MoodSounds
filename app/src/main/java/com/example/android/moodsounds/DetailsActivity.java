@@ -80,28 +80,11 @@ public class DetailsActivity extends AppCompatActivity {
     private Intent getParentActivityIntentImplement() {
 
         // Get the mood
-        Intent intent;
-        if (backActivity.equals("Angry")) {
-            intent = new Intent(this, MoodActivity.class);
-        } else if (backActivity.equals("Calm")) {
-            intent = new Intent(this, CalmActivity.class);
-        } else if (backActivity.equals("Energetic")) {
-            intent = new Intent(this, EnergeticActivity.class);
-        } else if (backActivity.equals("Grumpy")) {
-            intent = new Intent(this, GrumpyActivity.class);
-        } else if (backActivity.equals("Happy")) {
-            intent = new Intent(this, HappyActivity.class);
-        } else if (backActivity.equals("Relaxed")) {
-            intent = new Intent(this, RelaxedActivity.class);
-        } else if (backActivity.equals("Romantic")) {
-            intent = new Intent(this, RomanticActivity.class);
-        } else if (backActivity.equals("Sad")) {
-            intent = new Intent(this, SadActivity.class);
-        } else {
-            intent = new Intent(this, MainActivity.class);
-        }
+        Intent intent = new Intent(this, MoodActivity.class);
+        intent.putExtra("mood", "Angry");
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
         return intent;
+
     }
 
     @Override
