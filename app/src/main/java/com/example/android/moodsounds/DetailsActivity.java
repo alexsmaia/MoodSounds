@@ -1,9 +1,8 @@
 package com.example.android.moodsounds;
 
-import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -30,22 +29,31 @@ public class DetailsActivity extends AppCompatActivity {
         // Find Root view
         LinearLayout rootView = (LinearLayout) findViewById(R.id.detailsRoot);
         // Change Background
-        if (backActivity.equals("Angry")) {
-            rootView.setBackgroundResource(R.color.angry);
-        } else if (backActivity.equals("Calm")) {
-            rootView.setBackgroundResource(R.color.calm);
-        } else if (backActivity.equals("Energetic")) {
-            rootView.setBackgroundResource(R.color.energetic);
-        } else if (backActivity.equals("Grumpy")) {
-            rootView.setBackgroundResource(R.color.grumpy);
-        } else if (backActivity.equals("Happy")) {
-            rootView.setBackgroundResource(R.color.happy);
-        } else if (backActivity.equals("Relaxed")) {
-            rootView.setBackgroundResource(R.color.relaxed);
-        } else if (backActivity.equals("Romantic")) {
-            rootView.setBackgroundResource(R.color.romantic);
-        } else if (backActivity.equals("Sad")) {
-            rootView.setBackgroundResource(R.color.sad);
+        switch (backActivity) {
+            case "Angry":
+                rootView.setBackgroundResource(R.color.angry);
+                break;
+            case "Calm":
+                rootView.setBackgroundResource(R.color.calm);
+                break;
+            case "Energetic":
+                rootView.setBackgroundResource(R.color.energetic);
+                break;
+            case "Grumpy":
+                rootView.setBackgroundResource(R.color.grumpy);
+                break;
+            case "Happy":
+                rootView.setBackgroundResource(R.color.happy);
+                break;
+            case "Relaxed":
+                rootView.setBackgroundResource(R.color.relaxed);
+                break;
+            case "Romantic":
+                rootView.setBackgroundResource(R.color.romantic);
+                break;
+            case "Sad":
+                rootView.setBackgroundResource(R.color.sad);
+                break;
         }
 
         // Get & Add Title to TextView
@@ -71,20 +79,16 @@ public class DetailsActivity extends AppCompatActivity {
                 startActivity(ActivityIntent);
             }
         });
-
-
     }
 
-    // Change the Top Back Botton
+    // Change the Top Back Button
     // (Code get from youtube tutorial https://www.youtube.com/watch?v=suWIljV1AxI)
     private Intent getParentActivityIntentImplement() {
-
         // Get the mood
         Intent intent = new Intent(this, MoodActivity.class);
         intent.putExtra("mood", "Angry");
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
         return intent;
-
     }
 
     @Override

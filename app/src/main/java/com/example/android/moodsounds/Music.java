@@ -72,6 +72,9 @@ public class Music implements Parcelable {
      */
     public String getMusicMood() { return musicMood; }
 
+    /**
+     *
+     */
     public static final Creator<Music> CREATOR
             = new Creator<Music>() {
         public Music createFromParcel(Parcel in) {

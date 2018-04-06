@@ -36,8 +36,8 @@
         <item name="android:textColor">@color/white</item>
     </style>
 
-    <!-- Detais Items TextViews. -->
-    <style name="detais_item_text" parent="list_item_text">
+    <!-- Details Items TextViews. -->
+    <style name="details_item_text" parent="list_item_text">
         <item name="android:paddingBottom">8dp</item>
         <item name="android:gravity">center</item>
     </style>

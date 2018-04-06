@@ -11,12 +11,11 @@ import java.util.ArrayList;
 
 public class MusicAdapter extends ArrayAdapter<Music> {
 
-
     /**
      * Custom constructor
      *
      * @param context The current context. Used to inflate the layout file.
-     * @param musics A List of Musics objects to display in a list
+     * @param musics  A List of Musics objects to display in a list
      */
     public MusicAdapter(Activity context, ArrayList<Music> musics) {
         super(context, 0, musics);
@@ -25,10 +24,10 @@ public class MusicAdapter extends ArrayAdapter<Music> {
     /**
      * View for AdapterView
      *
-     * @param position The position in the list of data that should be displayed in the
-     *                 list item view.
+     * @param position    The position in the list of data that should be displayed in the
+     *                    list item view.
      * @param convertView The recycled view to populate.
-     * @param parent The parent ViewGroup that is used for inflation.
+     * @param parent      The parent ViewGroup that is used for inflation.
      * @return The View for the position in the AdapterView.
      */
     @Override
@@ -46,7 +45,6 @@ public class MusicAdapter extends ArrayAdapter<Music> {
         TextView musicTitle = (TextView) listItemView.findViewById(R.id.musicTitle);
         // Get the music title and set it on the TextView
         musicTitle.setText(currentMusic.getMusicTitle());
-
 
         // Find the TextView with the ID musicAuthor
         TextView musicAuthor = (TextView) listItemView.findViewById(R.id.musicAuthor);
