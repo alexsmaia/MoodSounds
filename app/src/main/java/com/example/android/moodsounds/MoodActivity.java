@@ -34,110 +34,110 @@ public class MoodActivity extends AppCompatActivity {
                 musicList.setBackgroundResource(R.color.angry);
                 // Add Musics to Array List
                 musics.add(new Music(
-                        "Welcome to the Jungle",
-                        "Guns N' Roses",
-                        "4:32",
-                        "Angry"));
+                        getResources().getString(R.string.angry_m01_song),
+                        getResources().getString(R.string.angry_m01_artist),
+                        getResources().getString(R.string.angry_m01_time),
+                        getResources().getString(R.string.angry)));
                 musics.add(new Music(
-                        "Master of Puppets",
-                        "Metallica",
-                        "8:38",
-                        "Angry"));
+                        getResources().getString(R.string.angry_m02_song),
+                        getResources().getString(R.string.angry_m02_artist),
+                        getResources().getString(R.string.angry_m02_time),
+                        getResources().getString(R.string.angry)));
                 musics.add(new Music(
-                        "Battery",
-                        "Metallica",
-                        "5:10",
-                        "Angry"));
+                        getResources().getString(R.string.angry_m03_song),
+                        getResources().getString(R.string.angry_m02_artist),
+                        getResources().getString(R.string.angry_m03_time),
+                        getResources().getString(R.string.angry)));
                 musics.add(new Music(
-                        "Holidays in the Sun",
-                        "Sex Pistols",
-                        "3:22",
-                        "Angry"));
+                        getResources().getString(R.string.angry_m04_song),
+                        getResources().getString(R.string.angry_m04_artist),
+                        getResources().getString(R.string.angry_m04_time),
+                        getResources().getString(R.string.angry)));
                 musics.add(new Music(
-                        "New York",
-                        "Sex Pistols",
-                        "3:05",
-                        "Angry"));
+                        getResources().getString(R.string.angry_m05_song),
+                        getResources().getString(R.string.angry_m04_artist),
+                        getResources().getString(R.string.angry_m05_song),
+                        getResources().getString(R.string.angry)));
                 musics.add(new Music(
-                        "The Fight Song",
-                        "Marilyn Manson",
-                        "2:55",
-                        "Angry"));
+                        getResources().getString(R.string.angry_m06_song),
+                        getResources().getString(R.string.angry_m06_artist),
+                        getResources().getString(R.string.angry_m06_song),
+                        getResources().getString(R.string.angry)));
                 musics.add(new Music(
-                        "Disposable Teens",
-                        "Marilyn Manson",
-                        "3:01",
-                        "Angry"));
+                        getResources().getString(R.string.angry_m07_song),
+                        getResources().getString(R.string.angry_m06_artist),
+                        getResources().getString(R.string.angry_m07_song),
+                        getResources().getString(R.string.angry)));
                 musics.add(new Music(
-                        "The Death Song",
-                        "Marilyn Manson",
-                        "3:29",
-                        "Angry"));
+                        getResources().getString(R.string.angry_m08_song),
+                        getResources().getString(R.string.angry_m06_artist),
+                        getResources().getString(R.string.angry_m08_song),
+                        getResources().getString(R.string.angry)));
                 musics.add(new Music(
-                        "Counterfeit",
-                        "Limp Bizkit",
-                        "5:08",
-                        "Angry"));
+                        getResources().getString(R.string.angry_m09_song),
+                        getResources().getString(R.string.angry_m09_artist),
+                        getResources().getString(R.string.angry_m09_song),
+                        getResources().getString(R.string.angry)));
                 musics.add(new Music(
-                        "Leech",
-                        "Limp Bizkit",
-                        "2:11",
-                        "Angry"));
+                        getResources().getString(R.string.angry_m10_song),
+                        getResources().getString(R.string.angry_m09_artist),
+                        getResources().getString(R.string.angry_m10_song),
+                        getResources().getString(R.string.angry)));
                 musics.add(new Music(
-                        "Nitro (Youth Energy)",
-                        "The Offspring",
-                        "2:26",
-                        "Angry"));
+                        getResources().getString(R.string.angry_m11_song),
+                        getResources().getString(R.string.angry_m11_artist),
+                        getResources().getString(R.string.angry_m11_song),
+                        getResources().getString(R.string.angry)));
                 musics.add(new Music(
-                        "Killboy Powerhead",
-                        "The Offspring",
-                        "2:02",
-                        "Angry"));
+                        getResources().getString(R.string.angry_m12_song),
+                        getResources().getString(R.string.angry_m11_artist),
+                        getResources().getString(R.string.angry_m12_song),
+                        getResources().getString(R.string.angry)));
                 break;
             case "Calm":
                 // Change Background
                 musicList.setBackgroundResource(R.color.calm);
                 // Add Musics to Array List
                 musics.add(new Music(
-                        "Shades of Cool",
-                        "Lana Del Rey",
-                        "5:42",
-                        "Calm"));
+                        getResources().getString(R.string.calm_m01_song),
+                        getResources().getString(R.string.calm_m01_artist),
+                        getResources().getString(R.string.calm_m01_time),
+                        getResources().getString(R.string.calm)));
                 musics.add(new Music(
-                        "Old Money",
-                        "Lana Del Rey",
-                        "4:31",
-                        "Calm"));
+                        getResources().getString(R.string.calm_m02_song),
+                        getResources().getString(R.string.calm_m01_artist),
+                        getResources().getString(R.string.calm_m02_time),
+                        getResources().getString(R.string.calm)));
                 musics.add(new Music(
-                        "Money Power Glory",
-                        "Lana Del Rey",
-                        "4:30",
-                        "Calm"));
+                        getResources().getString(R.string.calm_m03_song),
+                        getResources().getString(R.string.calm_m01_artist),
+                        getResources().getString(R.string.calm_m03_time),
+                        getResources().getString(R.string.calm)));
                 musics.add(new Music(
-                        "Shake It Out",
-                        "Florence + the Machine",
-                        "4:37",
-                        "Calm"));
+                        getResources().getString(R.string.calm_m04_song),
+                        getResources().getString(R.string.calm_m04_artist),
+                        getResources().getString(R.string.calm_m04_time),
+                        getResources().getString(R.string.calm)));
                 musics.add(new Music(
-                        "Never Let Me Go",
-                        "Florence + the Machine",
-                        "4:31",
-                        "Calm"));
+                        getResources().getString(R.string.calm_m05_song),
+                        getResources().getString(R.string.calm_m04_artist),
+                        getResources().getString(R.string.calm_m05_time),
+                        getResources().getString(R.string.calm)));
                 musics.add(new Music(
-                        "Leave My Body",
-                        "Florence + the Machine",
-                        "4:26",
-                        "Calm"));
+                        getResources().getString(R.string.calm_m06_song),
+                        getResources().getString(R.string.calm_m04_artist),
+                        getResources().getString(R.string.calm_m06_time),
+                        getResources().getString(R.string.calm)));
                 musics.add(new Music(
-                        "Stay Here Forever",
-                        "Jewel",
-                        "2:59",
-                        "Calm"));
+                        getResources().getString(R.string.calm_m07_song),
+                        getResources().getString(R.string.calm_m07_artist),
+                        getResources().getString(R.string.calm_m07_time),
+                        getResources().getString(R.string.calm)));
                 musics.add(new Music(
-                        "What You Are",
-                        "Jewel",
-                        "3:40",
-                        "Calm"));
+                        getResources().getString(R.string.calm_m08_song),
+                        getResources().getString(R.string.calm_m07_artist),
+                        getResources().getString(R.string.calm_m08_time),
+                        getResources().getString(R.string.calm)));
                 break;
             case "Energetic":
                 // Change Background

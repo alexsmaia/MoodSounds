@@ -24,4 +24,61 @@
     <!-- Img Description -->
     <string name="play_btn">Play Button</string>
 
+    <!-- Angry Musics -->
+    <string name="angry_m01_song">Welcome to the Jungle</string>
+    <string name="angry_m01_artist">Guns N\' Roses</string>
+    <string name="angry_m01_time">4:32</string>
+    <string name="angry_m02_song">Master of Puppets</string>
+    <string name="angry_m02_artist">Metallica</string>
+    <string name="angry_m02_time">8:38</string>
+    <string name="angry_m03_song">Battery</string>
+    <string name="angry_m03_time">5:10</string>
+    <string name="angry_m04_song">Holidays in the Sun</string>
+    <string name="angry_m04_artist">Sex Pistols</string>
+    <string name="angry_m04_time">3:22</string>
+    <string name="angry_m05_song">New Yorke</string>
+    <string name="angry_m05_time">3:05</string>
+    <string name="angry_m06_song">The Fight Song</string>
+    <string name="angry_m06_artist">Marilyn Manson</string>
+    <string name="angry_m06_time">2:55</string>
+    <string name="angry_m07_song">Disposable Teens</string>
+    <string name="angry_m07_time">3:01</string>
+    <string name="angry_m08_song">The Death Song</string>
+    <string name="angry_m08_time">3:29</string>
+    <string name="angry_m09_song">Counterfeit</string>
+    <string name="angry_m09_artist">Limp Bizkit</string>
+    <string name="angry_m09_time">5:08</string>
+    <string name="angry_m10_song">Leech</string>
+    <string name="angry_m10_time">2:11</string>
+    <string name="angry_m11_song">Nitro (Youth Energy)</string>
+    <string name="angry_m11_artist">The Offspring</string>
+    <string name="angry_m11_time">2:26</string>
+    <string name="angry_m12_song">Killboy Powerhead</string>
+    <string name="angry_m12_time">2:02</string>
+
+    <!-- Calm Musics -->c
+    <string name="calm_m01_song">Shades of Cool</string>
+    <string name="calm_m01_artist">Lana Del Rey</string>
+    <string name="calm_m01_time">5:42</string>
+    <string name="calm_m02_song">Old Money</string>
+    <string name="calm_m02_time">4:31</string>
+    <string name="calm_m03_song">Money Power Glory</string>
+    <string name="calm_m03_time">4:30</string>
+    <string name="calm_m04_song">Shake It Out</string>
+    <string name="calm_m04_artist">Florence + the Machine</string>
+    <string name="calm_m04_time">4:37</string>
+    <string name="calm_m05_song">Never Let Me Go</string>
+    <string name="calm_m05_time">4:31</string>
+    <string name="calm_m06_song">Leave My Body</string>
+    <string name="calm_m06_time">4:26</string>
+    <string name="calm_m07_song">Stay Here Forever</string>
+    <string name="calm_m07_artist">Jewel</string>
+    <string name="calm_m07_time">2:59</string>
+    <string name="calm_m08_song">What You Are</string>
+    <string name="calm_m08_time">3:40</string>
+
+
+
+
+
 </resources>
